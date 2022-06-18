@@ -1,0 +1,6 @@
+name: OakLobbies
+version: '${project.version}'
+main: dev.oakleycord.oaklobbies.OakLobbies
+api-version: 1.18
+depend: [ PlusLib ]
+authors: [ OakleyCord ]
