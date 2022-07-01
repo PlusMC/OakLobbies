@@ -1,0 +1,13 @@
+keepSpawnInMemory: false # False for better performance when no players are around.
+
+Realtime:
+  enabled: true
+
+WelcomeMessage:
+  enabled: true
+  title: "This is a title"
+  subtitle: "This is a subtitle"
+  fadeIn: 10 #title fade in time in seconds
+  stay: 20 #title stay time in seconds
+  fadeOut: 10 #title fade out time in seconds
+  message: "This is a message you can use variables in any of these messages\nUse & for color\nYour time is %playerTime%\nYour timezone is %playerTimezone%" #use \n for line breaks

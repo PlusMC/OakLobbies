@@ -6,7 +6,7 @@
 
     <groupId>dev.oakleycord</groupId>
     <artifactId>OakLobbies</artifactId>
-    <version>0.1-INDEV</version>
+    <version>0.2-INDEV</version>
     <packaging>jar</packaging>
 
     <name>OakLobbies</name>
@@ -23,8 +23,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>16</source>
+                    <target>16</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>org.plusmc</groupId>
             <artifactId>PlusLib</artifactId>
-            <version>0.8-INDEV</version>
+            <version>0.10.3-INDEV</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
