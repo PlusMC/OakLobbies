@@ -6,7 +6,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.plusmc.pluslib.bukkit.handlers.MultiWorldHandler;
 import org.plusmc.pluslib.bukkit.managing.BaseManager;
-import org.plusmc.pluslib.bukkit.managing.PlusCommandManager;
 import org.plusmc.pluslib.bukkit.managing.TickingManager;
 import org.plusmc.pluslib.mongo.DatabaseHandler;
 import org.plusmc.pluslib.reflect.bungeespigot.config.ConfigSpigot;
@@ -50,13 +49,9 @@ public final class OakLobbies extends JavaPlugin {
 
         timeZones = new HashMap<>();
 
-        TechnobladeTribute tribute = new TechnobladeTribute();
-        BaseManager.createManager(PlusCommandManager.class, this);
-        BaseManager.registerAny(tribute, this);
 
         this.multiWorldHandler = new MultiWorldHandler(this, Bukkit.getWorlds().get(0));
         multiWorldHandler.registerEvents(new PlayerEvents(this));
-        multiWorldHandler.registerEvents(tribute);
 
 
         if(lobbyConfig.keepSpawnInMemory) {
